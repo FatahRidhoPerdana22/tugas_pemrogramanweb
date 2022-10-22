@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Login</title>
+</head>
+<style>
+	body{
+		font-family : sans-serif;
+		background-color: rgb(142, 190, 230);
+	}
+	h1{
+		text-align : center;
+		font-weight : 300;
+	}
+	.kotak{
+		width : 350px;
+		background: rgb(22, 84, 255);
+		margin : 80px auto;
+		padding : 30px 20px;
+		border-radius : 5px;
+	}
+	.judul{
+		text_align : center;
+		text-transform:capitalize ;
+	}
+	label{
+		font-size: 11pt;
+	}
+	input{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 5px;
+		font-size: 11pt;
+		margin-bottom: 20px;
+	}
+	button{
+		background: #2ab373;
+		color: white;
+		font-size: 11pt;
+		width: 100%;
+		border:  none;
+		border-radius: 3px;
+		padding: 10px 20px;
+	}
+</style>
+<body>
+	<div class="kotak">
+		<h1 class="judul">Form Login</h1>
+		<form method="post">
+			<label>Username :</label><input class="form_login" name="username" type="text" placeholder="Masukkan username">
+			<label>Password :</label><input class="form_login" name="password" type="password" placeholder="Masukkan password">
+			<button type="submit"><a href="">Login</a></button>
+
+		</form>
+		</div>
+</body>
+</html>
