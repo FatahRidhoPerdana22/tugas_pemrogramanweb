@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+</head>
+<body>
+	<h3 id="judul" style="display: none;">Latihan 2</h3>
+	<p id="ucapan"></p>
+	<script>
+		inputName();
+		function inputName(){
+			var name=prompt("Masukan Nama Anda :");
+			var ucapan="Selamat Datang  "+name;
+			document.getElementById("judul").style.display="block";
+			document.getElementById("ucapan").innerHTML=ucapan;
+		}
+	</script>
+
+</body>
+</html>
