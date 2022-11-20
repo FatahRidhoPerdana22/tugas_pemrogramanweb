@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p>
+    <h1>Fungsi dan Parameter dalam Javascript</h1>
+    <p><label>nilai 1:</label><input id="nilai1"><br></p>
+    <p><label>nilai 2:</label><input id="nilai2"><br></p>
+    <p><button style="margin-right:5px" onclick="fungsi1()">Hitung</button><button onclick="fungsi2()">Clear</button></p>
+    <p id="hasil"></p>
+    <script>
+        //fungsi
+        function fungsi1(){
+           if (validasi()){
+            var a, b;
+            a=parseFloat(document.getElementById("nilai1").value);
+            b=parseFloat(document.getElementById("nilai2").value);
+            document.getElementById("hasil").innerHTML=rataRata(a,b);
+           }
+           else{
+            alert("Silahkan Isi Nilai Terlebih Dahulu")
+           }
+        }
+        function validasi(){
+            if((document.getElementById("nilai1").value=="")||(document.getElementById("nilai2").value=="")){
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+        function fungsi2(){
+            document.getElementById("nilai1").values="";
+            document.getElementById("nilai2").values="";
+        }
+        function rataRata(a,b){
+            var hasil;
+            hasil=(a+b)/2;
+            return hasil;
+        }
+
+    </script>
+    
+</body>
+</html>
